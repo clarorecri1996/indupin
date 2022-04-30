@@ -1,0 +1,99 @@
+body{
+    font-family: 'Oswald', sans-serif;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 15px;
+    background: hsl(20, 80%, 94%, .5 );
+}
+
+.container{
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+/*Menu de navegacion*/
+.container .margin-navegation{
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+}
+
+.margin-navegation img{
+    width: 150px;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+    font-size: 17px;
+}
+
+.margin-navegation ul li a:hover{
+   border-bottom: 3px solid rgba(0, 0, 0, 0.267);
+}
+
+
+.margin-navegation ul{
+    list-style: none;
+    display: flex;
+}
+
+.margin-navegation ul li{
+    padding: 10px;
+}
+
+/*slider animacion*/
+
+.slider{
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    overflow: hidden;
+    
+}
+
+.slider ul{
+    display: flex;
+    padding: 0;
+    width: 400%;
+
+    animation:  cambio 20s infinite;
+    animation-direction: alternate; /*esta propiedad puede ir en una sola linea "animation" con un espacio*/
+}
+
+.slider li{
+    width: 100%;
+    list-style: none;
+}
+
+.slider img{
+    width: 100%;
+    height: 500px;
+    opacity: 0.8;
+}
+
+@keyframes cambio{
+    0% { margin-left: 0; }
+    20% { margin-left: 0; }
+
+    25% { margin-left: -100%; }
+    45% { margin-left: -100%; }
+
+    50% { margin-left: -200%; }
+    70% { margin-left: -200%; }
+
+    75% { margin-left: -300%; }
+    100% { margin-left: -300%; }
+}
+
+/*texto dentro de la imagen*/
+
+.header .slider{
+    position: relative;
+}
+
+.header .texto{
+    position: absolute;
+    
+}
